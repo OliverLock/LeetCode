@@ -4,7 +4,7 @@
 
 
 
-Console.WriteLine(CheckIfAllCharactersHaveEqualNumberofOccurrences.AnswerPerformant());
+Console.WriteLine(RingsAndRods.Answer());
 
 
 
