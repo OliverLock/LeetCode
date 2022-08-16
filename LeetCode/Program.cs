@@ -1,5 +1,10 @@
-﻿
-Console.WriteLine(LeetCode.LongestCommonPrefix());
+﻿using LeetCode.Easy;
+
+
+
+
+
+Console.WriteLine(LongestCommonPrefix.Answer());
 
 
 
@@ -9,16 +14,47 @@ Console.WriteLine(LeetCode.LongestCommonPrefix());
 
 
 
-public static class LeetCode
+public static class LeetCodea
 {
-    public static string LongestCommonPrefix()
+    public static string Current()
     {
+        string[] strs = { "ab", "a" };
+        var output = "";
+        var charCount = 0;
+        var outputTemp = "";
+        List<char[]> charsList = new List<char[]>();
+
+        if (strs.Count() == 0)
+            return "";
+        if (strs.Count() == 1)
+            return strs[0];
 
 
+        for (int i = 0; i <= strs.Count() - 1; i++)
+        {
+            var charArray = strs[i].ToCharArray();
+            charsList.Add(charArray);
+        }
+        while (charCount < charsList[0].Count())
+        {
 
-
-
-        return "Test";
+            outputTemp += charsList[0][charCount];
+            foreach (var item in charsList)
+            {
+                if (charCount > item.Count() - 1)
+                {
+                    return output;
+                }
+                if (outputTemp[charCount] != item[charCount])
+                {
+                    return output;
+                }
+            }
+            output += charsList[0][charCount];
+            charCount++;
+        }
+        
+        return output;
     }
 
 }
