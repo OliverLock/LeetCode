@@ -5,7 +5,7 @@ using LeetCode.Medium;
 
 
 
-Console.WriteLine(ConstructBinaryTreefromPreorderAndInorderTraversal.Answer());
+Console.WriteLine(ValidParentheses.AnswerRefactored());
 
 
 
