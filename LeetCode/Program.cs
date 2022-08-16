@@ -4,7 +4,7 @@
 
 
 
-Console.WriteLine(CheckIfAllCharactersHaveEqualNumberofOccurrences.Answer());
+Console.WriteLine(CheckIfAllCharactersHaveEqualNumberofOccurrences.AnswerPerformant());
 
 
 
