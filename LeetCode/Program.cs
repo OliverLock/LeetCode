@@ -5,8 +5,7 @@ using LeetCode.Medium;
 
 
 
-Console.WriteLine(ValidParentheses.AnswerRefactored());
-
+Console.WriteLine(RemoveDuplicatesFromSortedArray.Answer());
 
 
 
