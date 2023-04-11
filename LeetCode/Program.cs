@@ -5,7 +5,7 @@ using LeetCode.Medium;
 
 
 
-Console.WriteLine(RemoveDuplicatesFromSortedArray.Answer());
+Console.WriteLine(RemoveElement.Answer());
 
 
 
